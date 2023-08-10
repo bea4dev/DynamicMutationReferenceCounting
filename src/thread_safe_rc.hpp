@@ -87,9 +87,7 @@ public:
      */
     inline void lock() {
         while (this->object_ref->spin_lock_flag.test_and_set(memory_order_acquire)) {
-            while (this->object_ref->spin_lock_flag.test(memory_order_relaxed)) {
-                //spin
-            }
+            //spin
         }
     }
 
