@@ -3,6 +3,7 @@
 #include <cstddef>
 #include <atomic>
 #include <optional>
+#include <cstdlib>
 
 using namespace std;
 
